@@ -13,7 +13,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .hero h1{font-size:2.6rem;font-weight:900;line-height:1.05;background:linear-gradient(135deg,#fff 0%,#93c5fd 60%,#6ee7b7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.4rem;position:relative}
 .hero-sub{font-size:0.9rem;color:#cbd5e1;position:relative;margin-bottom:1.6rem}
 .lang-bar{display:flex;gap:8px;justify-content:center;position:relative}
-.lang-btn{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);color:#e2e8f0;font-size:13px;font-weight:600;padding:7px 20px;border-radius:20px;cursor:pointer;transition:all 0.2s}
+.lang-btn{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);color:#e2e8f0;font-size:15px;font-weight:600;padding:9px 24px;border-radius:20px;cursor:pointer;transition:all 0.2s}
 .lang-btn.active,.lang-btn:hover{background:#2563eb;border-color:#2563eb;color:#fff}
 .times-banner{display:flex;margin:1.2rem 1.5rem 0;gap:10px}
 .time-pill{flex:1;background:#161b22;border:1px solid #374151;border-radius:12px;padding:12px;text-align:center}
@@ -23,12 +23,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .time-pill.checkin .time-val{color:#10b981}
 .time-pill.checkout .time-val{color:#f59e0b}
 .sec{padding:1.5rem}
-.sec-title{font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1rem;padding-left:2px}
+.sec-title{font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1rem;padding-left:2px;display:flex;align-items:center;gap:8px}
+.sec-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#21262d,transparent)}
 .sec-title.green{color:#34d399}
 .sec-title.blue{color:#7dd3fc}
 .divider{height:1px;background:linear-gradient(90deg,transparent,#21262d,transparent);margin:0 1.5rem 1.5rem}
 .depto-tabs{display:flex;gap:8px;margin-bottom:1.2rem}
-.depto-btn{flex:1;background:#161b22;border:1px solid #374151;color:#cbd5e1;font-size:12px;font-weight:700;padding:10px 6px;border-radius:12px;cursor:pointer;transition:all 0.2s;text-align:center;line-height:1.3}
+.depto-btn{flex:1;background:#161b22;border:1px solid #374151;color:#cbd5e1;font-size:14px;font-weight:700;padding:12px 6px;border-radius:12px;cursor:pointer;transition:all 0.2s;text-align:center;line-height:1.3}
 .depto-btn.active{background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.5);color:#34d399}
 .depto-group{display:none}
 .depto-group.visible{display:block}
@@ -125,23 +126,23 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .season-text{font-size:13px;color:#e2e8f0;line-height:1.45}
 .extras-tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:1rem}
 .extras-tabs::-webkit-scrollbar{display:none}
-.ext-tab{background:#161b22;border:1px solid #374151;color:#cbd5e1;font-size:12px;font-weight:600;padding:7px 14px;border-radius:20px;cursor:pointer;white-space:nowrap;transition:all 0.2s;flex-shrink:0}
+.ext-tab{background:#161b22;border:1px solid #374151;color:#cbd5e1;font-size:14px;font-weight:600;padding:10px 18px;border-radius:20px;cursor:pointer;white-space:nowrap;transition:all 0.2s;flex-shrink:0}
 .ext-tab.active,.ext-tab:hover{background:#2563eb;border-color:#2563eb;color:#fff}
 .ext-group{display:none}
 .ext-group.visible{display:block}
 .tabs-wrap{padding:0 1.5rem .5rem;overflow-x:auto;scrollbar-width:none}
 .tabs-wrap::-webkit-scrollbar{display:none}
 .tabs{display:flex;gap:8px;width:max-content}
-.tab{background:#161b22;border:1px solid #374151;color:#cbd5e1;font-size:12.5px;font-weight:600;padding:7px 15px;border-radius:20px;cursor:pointer;white-space:nowrap;transition:all 0.2s}
+.tab{background:#161b22;border:1px solid #374151;color:#cbd5e1;font-size:14px;font-weight:600;padding:10px 18px;border-radius:20px;cursor:pointer;white-space:nowrap;transition:all 0.2s}
 .tab.active,.tab:hover{background:#2563eb;border-color:#2563eb;color:#fff}
 .places-wrap{padding:.5rem 1.5rem 1rem;display:flex;flex-direction:column;gap:10px}
-.place-card{background:#161b22;border:1px solid #374151;border-radius:14px;padding:.95rem 1.1rem;transition:border-color 0.2s}
-.place-card:hover{border-color:#2563eb}
+.place-card{background:#161b22;border:1px solid #374151;border-radius:14px;padding:.95rem 1.1rem;transition:all 0.2s}
+.place-card:hover{border-color:#2563eb;transform:translateY(-1px);box-shadow:0 4px 16px rgba(37,99,235,0.15)}
 .place-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-.place-name{font-size:14.5px;font-weight:700;color:#fff;line-height:1.3}
-.place-badge{background:rgba(37,99,235,0.15);border:1px solid rgba(37,99,235,0.35);color:#bfdbfe;font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px;white-space:nowrap;flex-shrink:0}
+.place-name{font-size:15px;font-weight:700;color:#fff;line-height:1.3}
+.place-badge{background:rgba(37,99,235,0.15);border:1px solid rgba(37,99,235,0.35);color:#bfdbfe;font-size:10px;font-weight:700;padding:3px 9px;border-radius:8px;white-space:nowrap;flex-shrink:0}
 .place-badge.new{background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.35);color:#6ee7b7}
-.place-badge.gold{background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.35);color:#fde68a}
+.place-badge.gold{background:rgba(245,158,11,0.2);border:1.5px solid rgba(245,158,11,0.5);color:#fde68a;font-size:11px}
 .place-desc{font-size:13px;color:#e2e8f0;margin-top:5px;line-height:1.55}
 .place-tip{font-size:12px;color:#7dd3fc;margin-top:5px;font-style:italic}
 .cat-group{display:none}
@@ -178,9 +179,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="depto-btn active" onclick="setDepto('d1')">🏠 Lake View</button>
     <button class="depto-btn" onclick="setDepto('d2')">🏠 Lake View 2</button>
   </div>
-  <div id="welcome-msg" style="margin-top:12px;background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(37,99,235,0.15));border:1.5px solid rgba(16,185,129,0.45);border-radius:14px;padding:14px 16px;text-align:center;box-shadow:0 0 20px rgba(16,185,129,0.08)">
-    <div style="font-size:16px;font-weight:900;color:#fff;margin-bottom:4px;letter-spacing:-0.3px" id="welcome-title">Bienvenidos al Lake View 🏔️</div>
-    <div style="font-size:13px;color:#a7f3d0;font-weight:500" id="welcome-sub">El lago Nahuel Huapi está a 200 metros de tu puerta</div>
+  <div id="welcome-msg" style="margin-top:12px;background:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(37,99,235,0.10));border:1.5px solid rgba(16,185,129,0.45);border-radius:16px;padding:18px 16px;text-align:center;box-shadow:0 0 24px rgba(16,185,129,0.1)">
+    <div style="font-size:28px;margin-bottom:6px">🏔️</div>
+    <div style="font-size:17px;font-weight:900;color:#fff;margin-bottom:5px;letter-spacing:-0.3px" id="welcome-title">Bienvenidos al Lake View</div>
+    <div style="font-size:13px;color:#a7f3d0;font-weight:500;font-style:italic" id="welcome-sub">El lago Nahuel Huapi está a 200 metros de tu puerta</div>
   </div>
 </div>
 
@@ -306,7 +308,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;position:relative">
       <div style="width:44px;height:44px;background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🚗</div>
       <div>
-        <div style="font-size:15px;font-weight:800;color:#fff" id="juani-title">¿Necesitás un auto?</div>
+        <div style="font-size:15px;font-weight:800;color:#fff" id="juani-title">Moverse en Bariloche sin auto es difícil 🚗</div>
         <div style="font-size:12px;color:#60a5fa;font-weight:600">Juani Rent A Car · Recomendado por el depto</div>
       </div>
     </div>
@@ -391,25 +393,27 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 
 
 
+<!-- CLIMA SIEMPRE VISIBLE -->
+<div style="padding:0 1.5rem 1rem">
+  <div style="font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#7dd3fc;margin-bottom:8px;padding-left:2px">🌤️ Bariloche ahora</div>
+  <div class="weather-card" style="margin-bottom:6px">
+    <div id="weather-content"><div class="weather-loading">Cargando clima de Bariloche...</div></div>
+  </div>
+  <div style="background:#161b22;border:1px solid #374151;border-radius:12px;padding:10px 12px;font-size:12px;color:#94a3b8;line-height:1.5">
+    💡 <strong style="color:#e2e8f0">Tip:</strong> En Bariloche el clima cambia rápido. Siempre llevá una campera impermeable, incluso en verano.
+  </div>
+</div>
+
+<div style="height:1px;background:linear-gradient(90deg,transparent,#21262d,transparent);margin:0 1.5rem 1rem"></div>
+
 <!-- EXTRAS SECTION -->
 <div class="sec">
   <div class="sec-title green">🛠️ Info útil · Useful info</div>
   <div class="extras-tabs">
-    <button class="ext-tab active" onclick="setExt('clima')">🌤️ Clima</button>
-    <button class="ext-tab" onclick="setExt('autos')">🚗 Autos</button>
+    <button class="ext-tab active" onclick="setExt('autos')">🚗 Autos</button>
     <button class="ext-tab" onclick="setExt('colectivos')">🚌 Colectivos</button>
     <button class="ext-tab" onclick="setExt('temporadas')">🍂 Temporadas</button>
     <button class="ext-tab" onclick="setExt('tips')">🧠 Tips locales</button>
-  </div>
-
-  <!-- CLIMA -->
-  <div class="ext-group visible" id="ext-clima">
-    <div class="weather-card">
-      <div id="weather-content"><div class="weather-loading">Cargando clima de Bariloche...</div></div>
-    </div>
-    <div class="service-card" style="margin-top:0">
-      <div class="service-desc" style="margin-bottom:6px">💡 <strong style="color:#e6edf3">Tip:</strong> En Bariloche el clima cambia muy rápido. Siempre llevá una campera impermeable, incluso en verano. Los cerros pueden tener viento fuerte aunque abajo esté lindo.</div>
-    </div>
   </div>
 
   <!-- AUTOS -->
@@ -747,8 +751,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <strong style="color:#6b7280;display:block;font-size:13px;margin-bottom:6px">La Florida 3566 · San Carlos de Bariloche</strong>
   Beautiful Lake View (Depto 1) · Beautiful Lake View 2 (Depto 3)<br><br>
   <a href="https://www.instagram.com/bariloche.experiences?igsh=eGdiZXQ2OXBlcWFr" target="_blank" style="color:#a78bfa;text-decoration:none;font-weight:600">@bariloche.experiences</a>
-  &nbsp;·&nbsp;
-  <a href="https://wa.me/5491131952798" target="_blank" style="color:#25d366;text-decoration:none;font-weight:600">WhatsApp</a>
   <div style="margin-top:12px;font-size:12px;color:#4b5563" id="footer-wa-msg">Escribinos cualquier duda — respondemos rápido 🙌</div>
 </div>
 
@@ -808,9 +810,9 @@ function setLang(lang){
   const footerMsg={es:'Escribinos cualquier duda — respondemos rápido 🙌',en:'Any questions, just message us — we reply fast 🙌',pt:'Qualquer dúvida, nos escreva — respondemos rápido 🙌'};
   const fm=document.getElementById('footer-wa-msg');if(fm)fm.textContent=footerMsg[lang];
   const juaniT={
-    es:{title:'¿Necesitás un auto?',desc:'Alquiler de confianza que usamos y recomendamos. Mencioná que venís de parte de <strong style="color:#e6edf3">Pedro Volpacchio</strong> — el mensaje ya está escrito, solo tocás enviar.',btn:'Contactar a Juani — de parte de Pedro'},
-    en:{title:'Need a car?',desc:'Our trusted car rental recommendation. Mention you\'re from <strong style="color:#e6edf3">Pedro Volpacchio\'s</strong> apartment — the message is pre-written, just hit send.',btn:'Contact Juani — from Pedro\'s place'},
-    pt:{title:'Precisa de um carro?',desc:'Aluguel de confiança que usamos e recomendamos. Mencione que vem do apartamento de <strong style="color:#e6edf3">Pedro Volpacchio</strong> — a mensagem já está escrita, só enviar.',btn:'Contatar Juani — da parte de Pedro'}
+    es:{title:'Moverse en Bariloche sin auto es difícil 🚗',desc:'Alquiler de confianza que usamos y recomendamos. Mencioná que venís de parte de <strong style="color:#e6edf3">Pedro Volpacchio</strong> — el mensaje ya está escrito, solo tocás enviar.',btn:'Contactar a Juani — de parte de Pedro'},
+    en:{title:'Getting around Bariloche without a car is tough 🚗',desc:'Our trusted car rental recommendation. Mention you\'re from <strong style="color:#e6edf3">Pedro Volpacchio\'s</strong> apartment — the message is pre-written, just hit send.',btn:'Contact Juani — from Pedro\'s place'},
+    pt:{title:'Se mover em Bariloche sem carro é difícil 🚗',desc:'Aluguel de confiança que usamos e recomendamos. Mencione que vem do apartamento de <strong style="color:#e6edf3">Pedro Volpacchio</strong> — a mensagem já está escrita, só enviar.',btn:'Contatar Juani — da parte de Pedro'}
   };
   const jt=juaniT[lang];
   if(jt){
@@ -870,7 +872,7 @@ function setDepto(dep){
   updateWelcome();
 }
 function setExt(tab){
-  const tabs=['clima','autos','colectivos','temporadas','tips'];
+  const tabs=['autos','colectivos','temporadas','tips'];
   document.querySelectorAll('.ext-tab').forEach((b,i)=>b.classList.toggle('active',tabs[i]===tab));
   document.querySelectorAll('.ext-group').forEach(g=>g.classList.remove('visible'));
   document.getElementById('ext-'+tab).classList.add('visible');
