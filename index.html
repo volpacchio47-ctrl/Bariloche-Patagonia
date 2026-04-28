@@ -426,6 +426,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="ext-tab" onclick="setExt('colectivos')">🚌 Colectivos</button>
     <button class="ext-tab" onclick="setExt('temporadas')">🍂 Temporadas</button>
     <button class="ext-tab" onclick="setExt('tips')">🧠 Tips locales</button>
+    <button class="ext-tab" onclick="setExt('supers')">🛒 Súpers</button>
+    <button class="ext-tab" onclick="setExt('emergencias')">🆘 Emergencias</button>
   </div>
 
   <!-- AUTOS -->
@@ -450,6 +452,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       </div>
       <div class="service-desc">La mejor app para pedir remis en Bariloche es <strong style="color:#e6edf3">inDriver</strong> o <strong style="color:#e6edf3">Cabify</strong>. También podés pedir por WhatsApp a cualquier remisería del centro.</div>
       <a class="service-btn blue" href="https://www.google.com/maps/search/remiserias+bariloche" target="_blank">Ver remiserías en Maps</a>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <div class="service-icon amber">⛽</div>
+        <div><div class="service-title">Estaciones de servicio</div><div class="service-sub">Más cercanas al depto</div></div>
+      </div>
+      <div class="service-desc">Las más convenientes desde Las Victorias. La <strong style="color:#e6edf3">YPF de Av. Bustillo</strong> está en camino al Circuito Chico. La <strong style="color:#e6edf3">Shell del centro</strong> sobre Av. 12 de Octubre es la más céntrica.</div>
+      <div style="display:flex;gap:8px">
+        <a class="service-btn blue" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px;border-radius:9px;font-size:12px;font-weight:700;text-decoration:none;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe" href="https://www.google.com/maps/search/estacion+de+servicio+YPF+Bustillo+Bariloche" target="_blank">⛽ YPF Bustillo</a>
+        <a class="service-btn blue" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:9px;border-radius:9px;font-size:12px;font-weight:700;text-decoration:none;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe" href="https://www.google.com/maps/search/Shell+Bariloche+centro" target="_blank">⛽ Shell centro</a>
+      </div>
     </div>
   </div>
 
@@ -486,8 +499,124 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <div class="tip-item"><div class="tip-emoji">🍺</div><div class="tip-text"><strong>Cervecería Patagonia sin reserva</strong> — El patio exterior no requiere reserva. Llegá antes de las 13hs o después de las 16hs para tener lugar fácil.</div></div>
       <div class="tip-item"><div class="tip-emoji">🏖️</div><div class="tip-text"><strong>Playa sin Viento (Circuito Chico)</strong> — La mejor playa del lago. Llegar temprano en verano, se llena. Alquiler de kayak en el lugar.</div></div>
       <div class="tip-item" style="border:none"><div class="tip-emoji">🌅</div><div class="tip-text"><strong>Atardecer desde Cerro Otto</strong> — Entre las 19 y 20hs en verano. Una de las mejores vistas de la Patagonia, sin la multitud del Campanario.</div></div>
+      <div class="tip-item" style="border:none"><div class="tip-emoji">📶</div><div class="tip-text"><strong>SIM / datos para turistas extranjeros</strong> — Chip Claro, Personal o Movistar en sucursales del centro o kioscos habilitados. El mejor roaming en zona montaña es <strong>Personal</strong>. Llevá DNI o pasaporte.</div></div>
     </div>
     <a class="service-btn blue" style="display:flex;align-items:center;justify-content:center;gap:7px;padding:11px;border-radius:10px;font-size:13px;font-weight:700;text-decoration:none;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#93c5fd" href="https://www.catedral.com.ar/partes-de-nieve" target="_blank">Estado de pistas Cerro Catedral ↗</a>
+  </div>
+
+  <!-- SUPERMERCADOS -->
+  <div class="ext-group" id="ext-supers">
+    <div class="service-card">
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;line-height:1.5">🛒 Los más cercanos al depto en Las Victorias. El <strong style="color:#e6edf3">Puelche</strong> es el más barato de la zona.</div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🟢</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Puelche Supermercado</div>
+          <div style="font-size:12px;color:#34d399;font-weight:600">⭐ Recomendado · Más barato de la zona</div>
+          <div style="font-size:12px;color:#94a3b8;margin-top:2px">Muy cerca del depto · Abre todos los días</div>
+        </div>
+        <a href="https://www.google.com/maps/search/Puelche+Supermercado+Bariloche" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(37,99,235,0.15);border:1px solid rgba(37,99,235,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🔵</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">La Anónima</div>
+          <div style="font-size:12px;color:#94a3b8;margin-top:2px">Súper completo más cercano al depto · Buena carnicería</div>
+        </div>
+        <a href="https://www.google.com/maps/search/La+Anonima+Bariloche+Las+Victorias" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🟡</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">El Todo</div>
+          <div style="font-size:12px;color:#94a3b8;margin-top:2px">Buena variedad · Útil para compras del día</div>
+        </div>
+        <a href="https://www.google.com/maps/search/El+Todo+supermercado+Bariloche" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(167,139,250,0.15);border:1px solid rgba(167,139,250,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🏘️</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Almacén Las Victorias</div>
+          <div style="font-size:12px;color:#c4b5fd;font-weight:600">El almacén del barrio · A pasos del depto</div>
+          <div style="font-size:12px;color:#94a3b8;margin-top:2px">Para lo urgente sin salir del barrio · Horarios amplios</div>
+        </div>
+        <a href="https://www.google.com/maps/search/Almacen+Las+Victorias+Bariloche" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0;border-bottom:none">
+        <div style="width:38px;height:38px;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.25);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🏪</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Mercado del Lago</div>
+          <div style="font-size:12px;color:#6ee7b7;font-weight:600">Súper + kiosco multirubro adentro</div>
+          <div style="font-size:12px;color:#94a3b8;margin-top:2px">Ideal para golosinas, diarios, artículos varios + compras completas</div>
+        </div>
+        <a href="https://www.google.com/maps/search/Mercado+del+Lago+Bariloche" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+    </div>
+    <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:10px 12px;font-size:12px;color:#94a3b8;line-height:1.5">
+      💡 <strong style="color:#6ee7b7">Tip:</strong> En el Puelche los precios son notablemente más bajos que en los súpers del centro. Para la compra grande de la semana, es la mejor opción de la zona.
+    </div>
+  </div>
+
+  <!-- EMERGENCIAS -->
+  <div class="ext-group" id="ext-emergencias">
+    <div class="service-card">
+      <div style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.25);border-radius:10px;padding:10px 12px;margin-bottom:12px;font-size:12px;color:#fca5a5;line-height:1.5">
+        ⚠️ <strong>Ante una emergencia médica urgente</strong> llamá al <strong style="font-size:14px">107</strong> (SAME) o dirigite al Hospital Ramón Carrillo (el más cercano y completo).
+      </div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(239,68,68,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">🏥</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Hospital Ramón Carrillo</div>
+          <div style="font-size:12px;color:#94a3b8">Moreno 601 · Guardia 24hs · Emergencias y urgencias</div>
+        </div>
+        <a href="https://www.google.com/maps/search/Hospital+Ramon+Carrillo+Bariloche" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(245,158,11,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">🚒</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Números clave</div>
+          <div style="font-size:12px;color:#fde68a;font-weight:600">Emergencias 911 · SAME 107 · Bomberos 100 · Policía 101</div>
+        </div>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(16,185,129,0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">💊</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Farmacias de turno</div>
+          <div style="font-size:12px;color:#94a3b8">Hay farmacias de turno 24hs en Bariloche. Consultá en Google "farmacia de turno Bariloche hoy"</div>
+        </div>
+        <a href="https://www.google.com/search?q=farmacia+de+turno+bariloche+hoy" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.3);color:#6ee7b7;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">🔍 Ver</a>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0">
+        <div style="width:38px;height:38px;background:rgba(37,99,235,0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">🏧</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Cajeros ATM</div>
+          <div style="font-size:12px;color:#94a3b8">Los cajeros del centro suelen tener largas filas en temporada alta. Ir temprano o ir al Galicia / BBVA de Mitre</div>
+        </div>
+        <a href="https://www.google.com/maps/search/cajero+automatico+bariloche+centro" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+
+      <div class="bus-row" style="padding:10px 0;border-bottom:none">
+        <div style="width:38px;height:38px;background:rgba(167,139,250,0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">🧺</div>
+        <div style="flex:1;padding:0 10px">
+          <div style="font-size:14px;font-weight:700;color:#fff">Lavandería</div>
+          <div style="font-size:12px;color:#94a3b8">Hay lavanderías en el centro. Útil para estadías largas. Buscar "lavandería" en Maps cerca del depto</div>
+        </div>
+        <a href="https://www.google.com/maps/search/lavanderia+bariloche" target="_blank" style="display:flex;align-items:center;gap:4px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:6px 10px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">📍 Maps</a>
+      </div>
+    </div>
+    <a href="https://wa.me/5491131952798" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#128c7e,#25d366);color:#fff;font-size:13px;font-weight:800;padding:12px;border-radius:12px;text-decoration:none;margin-top:2px">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Consultar cualquier emergencia a Pedro
+    </a>
   </div>
 
   <!-- QUÉ LLEVAR -->
@@ -502,6 +631,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="tab" onclick="setTab('restaurantes')">🍽️ <span class="t" data-es="Restaurantes" data-en="Restaurants" data-pt="Restaurantes">Restaurantes</span></button>
     <button class="tab" onclick="setTab('cervecerias')">🍺 <span class="t" data-es="Cervezas" data-en="Breweries" data-pt="Cervejas">Cervezas</span></button>
     <button class="tab" onclick="setTab('salir')">🎶 <span class="t" data-es="Salir" data-en="Nightlife" data-pt="Sair">Salir</span></button>
+    <button class="tab" onclick="setTab('tiendas')">🛍️ <span class="t" data-es="Tiendas" data-en="Shops" data-pt="Lojas">Tiendas</span></button>
   </div>
 </div>
 
@@ -696,6 +826,44 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     </div></div>
   </div>
 
+  <div class="cat-group" id="cat-tiendas">
+    <div class="place-card"><div class="place-header"><div class="place-name">Mamuschka</div><div class="place-badge gold">🍫 El clásico</div></div>
+      <div class="place-desc active" data-lang="es">La chocolatería más icónica de Bariloche desde 1956. Fila garantizada pero vale la pena. Mitre 298.</div>
+      <div class="place-desc" data-lang="en">Bariloche's most iconic chocolate shop since 1956. Lines guaranteed but worth it. Mitre 298.</div>
+      <div class="place-desc" data-lang="pt">A chocolateria mais icônica de Bariloche desde 1956. Fila garantida mas vale a pena. Mitre 298.</div>
+      <div class="place-tip">💡 Comprá surtido — los chocolates con frutos del bosque son únicos</div>
+      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
+        <a href="https://www.google.com/maps/search/Mamuschka+Bariloche" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">📍 Maps</a>
+        <a href="https://www.mamuschka.com" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);color:#6ee7b7;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">🌐 Web</a>
+      </div></div>
+
+    <div class="place-card"><div class="place-header"><div class="place-name">Rapanui</div><div class="place-badge new">✨ Premium</div></div>
+      <div class="place-desc active" data-lang="es">Chocolates premium con diseño y packaging espectacular. Ideales para regalo. Varias sucursales en el centro.</div>
+      <div class="place-desc" data-lang="en">Premium chocolates with spectacular design and packaging. Perfect as gifts. Multiple branches downtown.</div>
+      <div class="place-desc" data-lang="pt">Chocolates premium com design e embalagem espetaculares. Ideais para presente. Várias filiais no centro.</div>
+      <div class="place-tip">💡 El packaging es tan lindo que el regalo ya viene armado</div>
+      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
+        <a href="https://www.google.com/maps/search/Rapanui+chocolate+Bariloche" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">📍 Maps</a>
+      </div></div>
+
+    <div class="place-card"><div class="place-header"><div class="place-name">Del Turista</div><div class="place-badge">💰 Mejor precio</div></div>
+      <div class="place-desc active" data-lang="es">La mejor relación calidad-precio en chocolates. Granel y cajas. También alfajores y dulces regionales.</div>
+      <div class="place-desc" data-lang="en">Best quality-price ratio for chocolates. Bulk and boxed. Also alfajores and regional sweets.</div>
+      <div class="place-desc" data-lang="pt">Melhor custo-benefício em chocolates. A granel e em caixas. Também alfajores e doces regionais.</div>
+      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
+        <a href="https://www.google.com/maps/search/Del+Turista+chocolate+Bariloche" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">📍 Maps</a>
+      </div></div>
+
+    <div class="place-card"><div class="place-header"><div class="place-name">Productos regionales para llevar</div><div class="place-badge">🎁 Regalos</div></div>
+      <div class="place-desc active" data-lang="es">Lo mejor de la Patagonia para llevarse: 🍺 <strong style="color:#e6edf3">Cervezas artesanales</strong> (Blest, Berlina, Manush) · 🐟 <strong style="color:#e6edf3">Ahumados de trucha y salmón</strong> (hay puestos en el Circuito Chico) · 🍓 <strong style="color:#e6edf3">Mermeladas artesanales</strong> y dulce de leche regional · 🍷 <strong style="color:#e6edf3">Vinos patagónicos</strong> (Chacra, Humberto Canale).</div>
+      <div class="place-desc" data-lang="en">Patagonia's best to take home: 🍺 <strong style="color:#e6edf3">Craft beers</strong> (Blest, Berlina, Manush) · 🐟 <strong style="color:#e6edf3">Smoked trout & salmon</strong> (stalls on Circuito Chico) · 🍓 <strong style="color:#e6edf3">Artisan jams</strong> and regional dulce de leche · 🍷 <strong style="color:#e6edf3">Patagonian wines</strong> (Chacra, Humberto Canale).</div>
+      <div class="place-desc" data-lang="pt">O melhor da Patagônia para levar: 🍺 <strong style="color:#e6edf3">Cervejas artesanais</strong> · 🐟 <strong style="color:#e6edf3">Defumados de truta e salmão</strong> · 🍓 <strong style="color:#e6edf3">Geléias artesanais</strong> · 🍷 <strong style="color:#e6edf3">Vinhos patagônicos</strong>.</div>
+      <div class="place-tip">💡 Los ahumados no pasan por aduana argentina sin problema, pero consultá si viajás al exterior</div>
+      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
+        <a href="https://www.google.com/maps/search/productos+regionales+Bariloche" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">📍 Tiendas en Maps</a>
+      </div></div>
+  </div>
+
   </div>
 </div>
 
@@ -871,7 +1039,7 @@ function setLang(lang){
   updateWelcome();
 }
 function setTab(tab){
-  const tabs=['atracciones','restaurantes','cervecerias','salir'];
+  const tabs=['atracciones','restaurantes','cervecerias','salir','tiendas'];
   document.querySelectorAll('.tab').forEach((b,i)=>b.classList.toggle('active',tabs[i]===tab));
   document.querySelectorAll('.cat-group').forEach(g=>g.classList.remove('visible'));
   document.getElementById('cat-'+tab).classList.add('visible');
@@ -907,7 +1075,7 @@ function setDepto(dep){
   updateWelcome();
 }
 function setExt(tab){
-  const tabs=['autos','colectivos','temporadas','tips'];
+  const tabs=['autos','colectivos','temporadas','tips','supers','emergencias'];
   document.querySelectorAll('.ext-tab').forEach((b,i)=>b.classList.toggle('active',tabs[i]===tab));
   document.querySelectorAll('.ext-group').forEach(g=>g.classList.remove('visible'));
   document.getElementById('ext-'+tab).classList.add('visible');
