@@ -158,7 +158,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 
 <a class="wa-float" href="https://wa.me/5491131952798" target="_blank">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  Escribinos
+  <span id="wa-float-text">Contactanos</span>
   <div class="wa-pulse"></div>
 </a>
 
@@ -176,13 +176,29 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <div style="padding:1.2rem 1.5rem 0.5rem">
   <div style="font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#6b7280;margin-bottom:8px;text-align:center" id="depto-label">¿Cuál es tu departamento?</div>
   <div class="depto-tabs">
-    <button class="depto-btn active" onclick="setDepto('d1')">🏠 Lake View</button>
-    <button class="depto-btn" onclick="setDepto('d2')">🏠 Lake View 2</button>
+    <button class="depto-btn active" onclick="setDepto('d1')">🏠 Lake View Apt</button>
+    <button class="depto-btn" onclick="setDepto('d2')">🏠 Lake View Apt 2</button>
   </div>
   <div id="welcome-msg" style="margin-top:12px;background:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(37,99,235,0.10));border:1.5px solid rgba(16,185,129,0.45);border-radius:16px;padding:18px 16px;text-align:center;box-shadow:0 0 24px rgba(16,185,129,0.1)">
     <div style="font-size:28px;margin-bottom:6px">🏔️</div>
     <div style="font-size:17px;font-weight:900;color:#fff;margin-bottom:5px;letter-spacing:-0.3px" id="welcome-title">Bienvenidos al Lake View</div>
     <div style="font-size:13px;color:#a7f3d0;font-weight:500;font-style:italic" id="welcome-sub">El lago Nahuel Huapi está a 200 metros de tu puerta</div>
+  </div>
+
+  <!-- COMO LLEGAR — LO MÁS URGENTE -->
+  <div id="maps-top-d1">
+    <a href="https://www.google.com/maps/search/La+Florida+3566+Bariloche+Argentina" target="_blank"
+      style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;background:linear-gradient(135deg,#1d4ed8,#2563eb);color:#fff;font-size:15px;font-weight:800;padding:16px;border-radius:14px;text-decoration:none;box-shadow:0 4px 16px rgba(37,99,235,0.3)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span id="maps-top-label-d1" class="t" data-es="📍 Cómo llegar · La Florida 3566" data-en="📍 Get directions · La Florida 3566" data-pt="📍 Como chegar · La Florida 3566">📍 Cómo llegar · La Florida 3566</span>
+    </a>
+  </div>
+  <div id="maps-top-d2" style="display:none">
+    <a href="https://www.google.com/maps/search/La+Florida+3566+Bariloche+Argentina" target="_blank"
+      style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;background:linear-gradient(135deg,#1d4ed8,#2563eb);color:#fff;font-size:15px;font-weight:800;padding:16px;border-radius:14px;text-decoration:none;box-shadow:0 4px 16px rgba(37,99,235,0.3)">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span id="maps-top-label-d2" class="t" data-es="📍 Cómo llegar · La Florida 3566" data-en="📍 Get directions · La Florida 3566" data-pt="📍 Como chegar · La Florida 3566">📍 Cómo llegar · La Florida 3566</span>
+    </a>
   </div>
 </div>
 
@@ -203,11 +219,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <div class="sec-title green">📹 Check-in · <span class="t" data-es="Cómo ingresar" data-en="How to check in" data-pt="Como entrar">Cómo ingresar</span></div>
   <div class="depto-group visible" id="dep-d1">
     <div class="video-block visible" id="vd1-es">
-      <div class="video-label"><strong>Lake View · Depto 1</strong>Estacionamiento, ubicación y llaves en español</div>
+      <div class="video-label"><strong>Lake View · Depto 1</strong><span id="vd1-es-label">Estacionamiento, ubicación y llaves</span></div>
       <div class="video-wrap"><iframe src="https://www.youtube.com/embed/WeS2YTzyC5o" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div>
     </div>
     <div class="video-block" id="vd1-en">
-      <div class="video-label"><strong>Lake View · Apt 1</strong>Parking, location & keys in English</div>
+      <div class="video-label"><strong>Lake View · Apt 1</strong>Parking, location &amp; keys</div>
       <div class="video-wrap"><iframe src="https://www.youtube.com/embed/Y1rbaEYxRJQ" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div>
     </div>
     <div class="steps">
@@ -227,18 +243,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div class="step-text" data-lang="pt">🔑 Retire as chaves conforme mostrado no vídeo</div>
       </div>
     </div>
-    <a class="maps-btn" href="https://www.google.com/maps/search/La+Florida+3566+Bariloche+Argentina" target="_blank">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <span class="t" data-es="Cómo llegar · Depto 1 · La Florida 3566" data-en="How to get there · Apt 1 · La Florida 3566" data-pt="Como chegar · Apto 1 · La Florida 3566">Cómo llegar · Depto 1 · La Florida 3566</span>
-    </a>
   </div>
   <div class="depto-group" id="dep-d2">
     <div class="video-block visible" id="vd2-es">
-      <div class="video-label"><strong>Lake View 2 · Depto 3</strong>Estacionamiento, ubicación y llaves en español</div>
+      <div class="video-label"><strong>Lake View 2 · Depto 3</strong><span id="vd2-es-label">Estacionamiento, ubicación y llaves</span></div>
       <div class="video-wrap"><iframe src="https://www.youtube.com/embed/3q_Id3HGz9k" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div>
     </div>
     <div class="video-block" id="vd2-en">
-      <div class="video-label"><strong>Lake View 2 · Apt 3</strong>Parking, location & keys in English</div>
+      <div class="video-label"><strong>Lake View 2 · Apt 3</strong>Parking, location &amp; keys</div>
       <div class="video-wrap"><iframe src="https://www.youtube.com/embed/j_85A1nDLDg" allowfullscreen allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"></iframe></div>
     </div>
     <div class="steps">
@@ -258,14 +270,33 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
         <div class="step-text" data-lang="pt">🔑 Retire as chaves conforme mostrado no vídeo</div>
       </div>
     </div>
-    <a class="maps-btn" href="https://www.google.com/maps/search/La+Florida+3566+Bariloche+Argentina" target="_blank">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <span class="t" data-es="Cómo llegar · Depto 3 · La Florida 3566" data-en="How to get there · Apt 3 · La Florida 3566" data-pt="Como chegar · Apto 3 · La Florida 3566">Cómo llegar · Depto 3 · La Florida 3566</span>
-    </a>
   </div>
 </div>
 
 <div class="divider"></div>
+
+<div class="divider"></div>
+
+<!-- JUANI RENT A CAR -->
+<div style="padding:1rem 1.5rem 0">
+  <div style="background:linear-gradient(135deg,#0a1628 0%,#0f2040 100%);border:1.5px solid rgba(37,99,235,0.4);border-radius:20px;padding:1.2rem 1.4rem;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 80% 30%,rgba(37,99,235,0.1) 0%,transparent 60%)"></div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;position:relative">
+      <div style="width:44px;height:44px;background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🚗</div>
+      <div>
+        <div style="font-size:15px;font-weight:800;color:#fff" id="juani-title">Moverse en Bariloche sin auto es difícil 🚗</div>
+        <div style="font-size:12px;color:#60a5fa;font-weight:600">Juani Rent A Car · Recomendado por el depto</div>
+      </div>
+    </div>
+    <div style="font-size:13px;color:#9ca3af;line-height:1.55;margin-bottom:12px;position:relative" id="juani-desc">Alquiler de confianza que usamos y recomendamos. Mencioná que venís de parte de <strong style="color:#e6edf3">Pedro Volpacchio</strong> — el mensaje ya está escrito, solo tocás enviar.</div>
+    <a id="juani-wa-btn" href="https://wa.me/5492944603914?text=Hola%20Juani!%20Te%20contacto%20de%20parte%20de%20Pedro%20Volpacchio%20del%20departamento%20Beautiful%20Lake%20View.%20Quisiera%20consultar%20por%20alquiler%20de%20auto%20para%20mi%20estadía%20en%20Bariloche." target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#128c7e,#25d366);color:#fff;font-size:13px;font-weight:800;padding:12px;border-radius:12px;text-decoration:none;position:relative">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span id="juani-btn">Contactar a Juani — de parte de Pedro</span>
+    </a>
+  </div>
+</div>
+
+<div style="height:1px;background:linear-gradient(90deg,transparent,#21262d,transparent);margin:1.5rem 1.5rem 0"></div>
 
 <div class="sec" style="padding-bottom:0.5rem">
   <div class="sec-title blue">WiFi</div>
@@ -300,25 +331,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </div>
 
 <div class="divider"></div>
-
-<!-- JUANI RENT A CAR -->
-<div style="padding:1rem 1.5rem 0">
-  <div style="background:linear-gradient(135deg,#0a1628 0%,#0f2040 100%);border:1.5px solid rgba(37,99,235,0.4);border-radius:20px;padding:1.2rem 1.4rem;position:relative;overflow:hidden">
-    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 80% 30%,rgba(37,99,235,0.1) 0%,transparent 60%)"></div>
-    <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;position:relative">
-      <div style="width:44px;height:44px;background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🚗</div>
-      <div>
-        <div style="font-size:15px;font-weight:800;color:#fff" id="juani-title">Moverse en Bariloche sin auto es difícil 🚗</div>
-        <div style="font-size:12px;color:#60a5fa;font-weight:600">Juani Rent A Car · Recomendado por el depto</div>
-      </div>
-    </div>
-    <div style="font-size:13px;color:#9ca3af;line-height:1.55;margin-bottom:12px;position:relative" id="juani-desc">Alquiler de confianza que usamos y recomendamos. Mencioná que venís de parte de <strong style="color:#e6edf3">Pedro Volpacchio</strong> — el mensaje ya está escrito, solo tocás enviar.</div>
-    <a id="juani-wa-btn" href="https://wa.me/5492944603914?text=Hola%20Juani!%20Te%20contacto%20de%20parte%20de%20Pedro%20Volpacchio%20del%20departamento%20Beautiful%20Lake%20View.%20Quisiera%20consultar%20por%20alquiler%20de%20auto%20para%20mi%20estadía%20en%20Bariloche." target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#128c7e,#25d366);color:#fff;font-size:13px;font-weight:800;padding:12px;border-radius:12px;text-decoration:none;position:relative">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      <span id="juani-btn">Contactar a Juani — de parte de Pedro</span>
-    </a>
-  </div>
-</div>
 
 <div style="height:1px;background:linear-gradient(90deg,transparent,#21262d,transparent);margin:1.5rem 1.5rem 0"></div>
 
@@ -751,7 +763,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <strong style="color:#6b7280;display:block;font-size:13px;margin-bottom:6px">La Florida 3566 · San Carlos de Bariloche</strong>
   Beautiful Lake View (Depto 1) · Beautiful Lake View 2 (Depto 3)<br><br>
   <a href="https://www.instagram.com/bariloche.experiences?igsh=eGdiZXQ2OXBlcWFr" target="_blank" style="color:#a78bfa;text-decoration:none;font-weight:600">@bariloche.experiences</a>
-  <div style="margin-top:12px;font-size:12px;color:#4b5563" id="footer-wa-msg">Escribinos cualquier duda — respondemos rápido 🙌</div>
+  <div style="margin-top:12px;font-size:12px;color:#4b5563" id="footer-wa-msg">Contactanos por cualquier duda — respondemos rápido 🙌</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -807,7 +819,9 @@ function setLang(lang){
     const b=document.getElementById('exp-btn-book');if(b)b.textContent=t.book;
     const ig=document.getElementById('exp-btn-ig');if(ig)ig.textContent=t.ig;
   }
-  const footerMsg={es:'Escribinos cualquier duda — respondemos rápido 🙌',en:'Any questions, just message us — we reply fast 🙌',pt:'Qualquer dúvida, nos escreva — respondemos rápido 🙌'};
+  const waFloatText={es:'Contactanos',en:'Contact us',pt:'Fale conosco'};
+  const wft=document.getElementById('wa-float-text');if(wft)wft.textContent=waFloatText[lang];
+  const footerMsg={es:'Contactanos por cualquier duda — respondemos rápido 🙌',en:'Contact us for anything — we reply fast 🙌',pt:'Entre em contato com qualquer dúvida — respondemos rápido 🙌'};
   const fm=document.getElementById('footer-wa-msg');if(fm)fm.textContent=footerMsg[lang];
   const juaniT={
     es:{title:'Moverse en Bariloche sin auto es difícil 🚗',desc:'Alquiler de confianza que usamos y recomendamos. Mencioná que venís de parte de <strong style="color:#e6edf3">Pedro Volpacchio</strong> — el mensaje ya está escrito, solo tocás enviar.',btn:'Contactar a Juani — de parte de Pedro'},
@@ -834,6 +848,14 @@ function setLang(lang){
     const e5=document.getElementById('catedral-btn2');if(e5)e5.textContent=ct.btn2;
     const e6=document.getElementById('catedral-btn3');if(e6)e6.textContent=ct.btn3;
   }
+  const videoLabels = {
+    es: 'Estacionamiento, ubicación y llaves',
+    en: 'Estacionamiento, ubicación y llaves',
+    pt: 'Estacionamento, localização e chaves'
+  };
+  const vl = videoLabels[lang];
+  const vl1 = document.getElementById('vd1-es-label'); if(vl1) vl1.textContent = vl;
+  const vl2 = document.getElementById('vd2-es-label'); if(vl2) vl2.textContent = vl;
   renderOutfit();
   updateWelcome();
 }
@@ -868,6 +890,8 @@ function setDepto(dep){
   document.getElementById('dep-'+dep).classList.add('visible');
   document.getElementById('wifi-d1').style.display = dep==='d1' ? 'block' : 'none';
   document.getElementById('wifi-d2').style.display = dep==='d2' ? 'block' : 'none';
+  const mt1 = document.getElementById('maps-top-d1'); if(mt1) mt1.style.display = dep==='d1' ? 'block' : 'none';
+  const mt2 = document.getElementById('maps-top-d2'); if(mt2) mt2.style.display = dep==='d2' ? 'block' : 'none';
   syncVideos();
   updateWelcome();
 }
