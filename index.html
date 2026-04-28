@@ -310,7 +310,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <span class="t" data-es="Escanear para conectarse" data-en="Scan to connect" data-pt="Escanear para conectar">Escanear para conectarse</span>
     </button>
     <div class="qr-panel" id="qr1">
-      <canvas id="canvas-qr1"></canvas>
+      <div id="canvas-qr1"></div>
       <p><span class="t" data-es="Apuntá la cámara al código" data-en="Point camera at code" data-pt="Aponte a câmera para o código">Apuntá la cámara al código</span><br><strong>PEDRO</strong> · pedropedro</p>
     </div>
   </div>
@@ -324,7 +324,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <span class="t" data-es="Escanear para conectarse" data-en="Scan to connect" data-pt="Escanear para conectar">Escanear para conectarse</span>
     </button>
     <div class="qr-panel" id="qr2">
-      <canvas id="canvas-qr2"></canvas>
+      <div id="canvas-qr2"></div>
       <p><span class="t" data-es="Apuntá la cámara al código" data-en="Point camera at code" data-pt="Aponte a câmera para o código">Apuntá la cámara al código</span><br><strong>POVOLI</strong> · mosconi261</p>
     </div>
   </div>
@@ -429,7 +429,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   </div>
 
   <!-- AUTOS -->
-  <div class="ext-group" id="ext-autos">
+  <div class="ext-group visible" id="ext-autos">
     <div class="service-card">
       <div class="service-header">
         <div class="service-icon green">🚗</div>
@@ -549,7 +549,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
       <a href="https://www.google.com/maps/search/Cerro+Ventana+Bariloche" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.3);color:#bfdbfe;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">📍 Maps</a>
       <a href="https://www.google.com/search?q=horarios+ascenso+cerro+ventana+bariloche+acceso" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);color:#fde68a;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">🕐 Horarios y acceso</a>
-    </div></div><div class="place-badge">⛵ Tour en bote</div></div><div class="place-desc active" data-lang="es">Tour en bote desde el centro. Isla Victoria, Brazo Tristeza y Brazo Blest. También: Aloha Patagonia Tour privado (máx. 9 personas).</div><div class="place-desc" data-lang="en">Boat tour from downtown. Victoria Island, Tristeza & Blest Arms. Also: Aloha Patagonia private tour (max 9 people).</div><div class="place-desc" data-lang="pt">Passeio de barco do centro. Ilha Victoria, Braço Tristeza e Braço Blest. Também: Aloha Patagonia privado (máx. 9).</div>
+    </div></div>
+
+    <div class="place-card"><div class="place-header"><div class="place-name">Excursiones lacustres</div><div class="place-badge">⛵ Tour en bote</div></div><div class="place-desc active" data-lang="es">Tour en bote desde el centro. Isla Victoria, Brazo Tristeza y Brazo Blest. También: Aloha Patagonia Tour privado (máx. 9 personas).</div><div class="place-desc" data-lang="en">Boat tour from downtown. Victoria Island, Tristeza & Blest Arms. Also: Aloha Patagonia private tour (max 9 people).</div><div class="place-desc" data-lang="pt">Passeio de barco do centro. Ilha Victoria, Braço Tristeza e Braço Blest. Também: Aloha Patagonia privado (máx. 9).</div>
     <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
       <a href="https://www.bosciket.com.ar" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);color:#6ee7b7;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">🌐 Reservar tour</a>
       <a href="https://www.instagram.com/aloha.patagonia" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.3);color:#c4b5fd;font-size:11px;font-weight:700;padding:5px 10px;border-radius:8px;text-decoration:none">📸 Aloha Patagonia</a>
@@ -859,7 +861,7 @@ function setLang(lang){
   }
   const videoLabels = {
     es: 'Estacionamiento, ubicación y llaves',
-    en: 'Estacionamiento, ubicación y llaves',
+    en: 'Parking, location & keys',
     pt: 'Estacionamento, localização e chaves'
   };
   const vl = videoLabels[lang];
@@ -1022,7 +1024,7 @@ function toggleQR(id){
       qr2:{str:'WIFI:T:WPA;S:POVOLI;P:mosconi261;;',canvas:'canvas-qr2'}
     };
     const c=configs[id];
-    QRCode.toCanvas(document.getElementById(c.canvas),c.str,{width:200,margin:2,color:{dark:'#000000',light:'#ffffff'}});
+    new QRCode(document.getElementById(c.canvas),{text:c.str,width:200,height:200,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.H});
     qrGenerated[id]=true;
   }
 }
