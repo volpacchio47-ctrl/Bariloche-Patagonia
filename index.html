@@ -163,9 +163,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </a>
 
 <div class="hero">
-  <div class="hero-badge">🏔️ Patagonia · Bariloche</div>
-  <h1>Bariloche<br>Experiencias</h1>
-  <p class="hero-sub">La Florida 3566 · Tu guía completa</p>
+  <div class="hero-badge" id="hero-badge">🏔️ Patagonia · Bariloche</div>
+  <h1 id="hero-title">Bariloche<br>Experiencias</h1>
+  <p class="hero-sub">La Florida 3566 · <span id="hero-sub">Tu guía completa</span></p>
   <div class="lang-bar">
     <button class="lang-btn active" onclick="setLang('es')">🇦🇷 ES</button>
     <button class="lang-btn" onclick="setLang('en')">🇺🇸 EN</button>
@@ -819,6 +819,15 @@ function setLang(lang){
     const b=document.getElementById('exp-btn-book');if(b)b.textContent=t.book;
     const ig=document.getElementById('exp-btn-ig');if(ig)ig.textContent=t.ig;
   }
+  const heroTexts = {
+    es: {badge:'🏔️ Patagonia · Bariloche', title:'Bariloche<br>Experiencias', sub:'Tu guía completa'},
+    en: {badge:'🏔️ Patagonia · Bariloche', title:'Bariloche<br>Experiences',  sub:'Your complete guide'},
+    pt: {badge:'🏔️ Patagônia · Bariloche', title:'Bariloche<br>Experiências', sub:'Seu guia completo'}
+  };
+  const ht = heroTexts[lang];
+  const hb = document.getElementById('hero-badge'); if(hb) hb.textContent = ht.badge;
+  const hh = document.getElementById('hero-title'); if(hh) hh.innerHTML = ht.title;
+  const hs = document.getElementById('hero-sub');   if(hs) hs.textContent = ht.sub;
   const waFloatText={es:'Contactanos',en:'Contact us',pt:'Fale conosco'};
   const wft=document.getElementById('wa-float-text');if(wft)wft.textContent=waFloatText[lang];
   const footerMsg={es:'Contactanos por cualquier duda — respondemos rápido 🙌',en:'Contact us for anything — we reply fast 🙌',pt:'Entre em contato com qualquer dúvida — respondemos rápido 🙌'};
