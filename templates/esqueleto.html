@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ nombre_propiedad }} - Experiencias</title>
+    <style>
+        :root {
+            /* Aquí Python definirá el color y el fondo según el anfitrión */
+            --primary-color: {{ color_tema | default('#2563eb') }};
+            --hero-bg: {{ url_imagen_fondo | default('linear-gradient(170deg, #050d1a 0%, #0d2040 40%)') }};
+        }
+
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0f1a;color:#f1f5f9;min-height:100vh;padding-bottom:90px}
+        
+        .hero{
+            background: var(--hero-bg);
+            background-size: cover;
+            background-position: center;
+            padding:2.8rem 1.5rem 2.2rem;
+            position:relative;
+            overflow:hidden;
+        }
+        
+        .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.35);color:#6ee7b7;font-size:0.9rem;padding:6px 12px;border-radius:100px;margin-bottom:1.2rem}
+        .hero h1{font-size:2.6rem;font-weight:900;line-height:1.05;background:linear-gradient(135deg,#fff 0%,#93c5fd 60%,#6ee7b7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0.6rem}
+        .hero-sub{font-size:0.9rem;color:#cbd5e1;position:relative;margin-bottom:1.6rem}
+
+        /* Tus estilos de botones de idioma y tarjetas de tiempo se mantienen igual */
+        .lang-btn.active{background: var(--primary-color); border-color: var(--primary-color);}
+        
+        /* SECCIÓN DE RECOMENDACIONES AUTOMÁTICA */
+        .places-container { padding: 1.5rem; display: grid; gap: 1rem; }
+        .place-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 1rem; border-radius: 12px; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-badge">✨ {{ tipo_propiedad | default('Alojamiento Verificado') }}</div>
+        <h1>{{ nombre_propiedad }}</h1>
+        <p class="hero-sub">{{ subtitulo_bienvenida }}</p>
+        
+        <!-- Botones de idioma (puedes dejarlos fijos o dinamizarlos) -->
+        <div class="lang-bar">
+            <button class="lang-btn active">Español</button>
+            <button class="lang-btn">English</button>
+        </div>
+    </div>
+
+    <!-- Sección de Check-in/out dinámico -->
+    <div class="times-banner" style="display:flex; gap:10px; padding: 1.5rem;">
+        <div class="time-pill">
+            <span class="time-label">CHECK-IN</span>
+            <span class="time-val">{{ horario_checkin | default('15:00') }}</span>
+        </div>
+        <div class="time-pill checkout">
+            <span class="time-label">CHECK-OUT</span>
+            <span class="time-val">{{ horario_checkout | default('11:00') }}</span>
+        </div>
+    </div>
+
+    <!-- BLOQUE MÁGICO: Aquí es donde Python creará las tarjetas de la zona solo -->
+    <div class="places-container">
+        <h2 style="margin-left: 5px;">Recomendaciones en {{ zona_barrio }}</h2>
+        
+        {% for lugar in recomendaciones %}
+        <div class="place-card">
+            <strong style="color: var(--primary-color)">{{ lugar.categoria }}</strong>
+            <h3>{{ lugar.nombre }}</h3>
+            <p style="font-size: 0.85rem; color: #94a3b8; margin: 5px 0;">{{ lugar.descripcion }}</p>
+            <a href="{{ lugar.link_maps }}" target="_blank" style="color: #6ee7b7; text-decoration: none; font-size: 0.9rem;">📍 Abrir en Google Maps</a>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
